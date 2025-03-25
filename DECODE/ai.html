@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalinga Institute of Industrial Technology</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Top Navigation */
+        .top-nav {
+            background: #00b341;
+            padding: 8px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .top-nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-links a {
+            color: white;
+        }
+
+        .fee-payment {
+            background: #4051b5;
+            padding: 5px 15px;
+            border-radius: 4px;
+        }
+
+        /* Main Header */
+        .main-header {
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+        }
+
+        .logo {
+            height: 60px;
+        }
+
+        .logo img {
+            height: 100%;
+        }
+
+        .main-nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        .main-nav a {
+            color: #333;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 600px;
+            overflow: hidden;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translateY(-50%);
+            color: white;
+        }
+
+        .hero-title {
+            font-size: 64px;
+            background: linear-gradient(45deg, #00bcd4, #4caf50);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 36px;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .know-more-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: transparent;
+            color: white;
+            text-decoration: none;
+            border: 2px solid white;
+            border-radius: 25px;
+            font-size: 18px;
+            transition: all 0.3s;
+        }
+
+        .know-more-btn:hover {
+            background: white;
+            color: #00b341;
+        }
+
+        .quick-help {
+            position: fixed;
+            right: 0;
+            top: 50%;
+            background: #00b341;
+            color: white;
+            padding: 10px;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            cursor: pointer;
+            transform: translateY(-50%);
+        }
+
+        @media (max-width: 1024px) {
+            .hero-title {
+                font-size: 48px;
+            }
+            .hero-subtitle {
+                font-size: 28px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .top-nav-links, .main-nav {
+                display: none;
+            }
+            .hero-title {
+                font-size: 36px;
+            }
+            .hero-subtitle {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="top-nav-links">
+            <a href="#">SAP Portal</a>
+            <a href="#">Library</a>
+            <a href="#">Notices</a>
+            <a href="#">Alumni</a>
+            <a href="#">Staff</a>
+            <a href="#">Sports</a>
+            <a href="#">Examination</a>
+            <a href="#">Placement</a>
+            <a href="#">Careers</a>
+            <a href="#">Founder</a>
+            <a href="#">A – Z Index</a>
+            <a href="#">Brochure</a>
+            <a href="#">KIITEE 2025</a>
+            <a href="#" class="fee-payment">Fee Payment</a>
+        </div>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </nav>
+
+    <header class="main-header">
+        <div class="logo">
+            <img src="/api/placeholder/180/60" alt="KIIT Logo">
+        </div>
+        <nav class="main-nav">
+            <a href="#">ABOUT KIIT</a>
+            <a href="#">ACADEMICS</a>
+            <a href="#">RESEARCH</a>
+            <a href="#">NEWS & EVENTS</a>
+            <a href="#">EXPLORE KIIT</a>
+            <a href="#">VIRTUAL TOUR</a>
+            <a href="#">CONTACT US</a>
+            <a href="#">ADMISSION 2025</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="/api/placeholder/1920/1080" class="hero-image" alt="KIIT Campus">
+        <div class="hero-content">
+            <h1 class="hero-title">Education for<br>Transformation</h1>
+            <h2 class="hero-subtitle">Prof. Achyuta Samanta<br>Founder KIIT and KISS</h2>
+            <a href="#" class="know-more-btn">Know More</a>
+        </div>
+    </section>
+
+    <div class="quick-help">
+        Quick Help
+    </div>
+</body>
+</html>

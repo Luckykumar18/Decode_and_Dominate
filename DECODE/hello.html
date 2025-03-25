@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .events-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  .events-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .events-header h2 {
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .view-all {
+    color: #00bcd4;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .events-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .event-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .event-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .event-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .event-content {
+    padding: 15px;
+  }
+
+  .event-title {
+    color: #0072bc;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    text-decoration: none;
+  }
+
+  .event-title:hover {
+    text-decoration: underline;
+  }
+
+  .event-date {
+    color: #666;
+    font-size: 12px;
+    display: block;
+    margin-top: 10px;
+  }
+
+  @media (max-width: 1024px) {
+    .events-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .events-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="events-container">
+    <div class="events-header">
+      <h2>Events</h2>
+      <a href="#" class="view-all">View All Events</a>
+    </div>
+
+    <div class="events-grid">
+      <div class="event-card">
+        <img src="./assets/IC-ENGINE-LAB-9-400x225.jpg" alt="Indigenous Conference" class="event-image">
+        <div class="event-content">
+          <a href="#" class="event-title">Two day International Conference on "Utilization of Indigenous Knowledge of Particularly Vulnerable Tribal Groups for an Inclusive Viksit Bharat"</a>
+          <span class="event-date">February 13 @ 8:00 am - February 14 @ 5:00 pm IST</span>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="./assets/boying-1.jpg" alt="Management Research Conference" class="event-image">
+        <div class="event-content">
+          <a href="#" class="event-title">5th International Conference on Management Research</a>
+          <span class="event-date">February 21 - February 22</span>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="./assets/Youth-congress-450x300 (1).jpg" alt="IEEE Conference" class="event-image">
+        <div class="event-content">
+          <a href="#" class="event-title">3rd IEEE International Conference on Industrial Electronics: Developments & Applications (ICIDeA-2024)</a>
+          <span class="event-date">February 21 - February 22</span>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="./assets/iwdc.jpg" alt="Dam Safety Workshop" class="event-image">
+        <div class="event-content">
+          <a href="#" class="event-title">International Workshop on DAM SAFETY</a>
+          <span class="event-date">February 21 @ 8:00 am - February 23 @ 5:00 pm IST</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
